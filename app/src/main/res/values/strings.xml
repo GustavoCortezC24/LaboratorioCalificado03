@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LaboratorioCalificado03</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="phone_icon">phone_icon</string>
+    <string name="email_icon">email_icon\n</string>
+</resources>

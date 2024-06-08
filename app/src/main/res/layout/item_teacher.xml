@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/ivFoto"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/placeholder"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circular_background"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-4dp"
+            android:layout_toEndOf="@+id/ivFoto"
+            android:text="@string/nombre"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvApellido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNombre"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/ivFoto"
+            android:text="@string/apellido" />
+
+        <ImageView
+            android:id="@+id/ivTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvApellido"
+            android:layout_toEndOf="@+id/ivFoto"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/phone_icon"
+            android:contentDescription="@string/phone_icon" />
+
+        <ImageView
+            android:id="@+id/ivEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvApellido"
+            android:layout_toEndOf="@+id/ivTelefono"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/gmail_icon"
+            android:contentDescription="@string/email_icon" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
